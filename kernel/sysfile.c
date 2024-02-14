@@ -57,7 +57,7 @@ int sys_dup(void) {
   return fd;
 }
 
-int sys_read(void) {
+int sys_read(void) {	//when user calls it, call read()
   struct file* f;
   int n;
   char* p;
@@ -257,7 +257,7 @@ static struct inode* create(char* path, short type, short major, short minor) {
   return ip;
 }
 
-int sys_open(void) {
+int sys_open(void) {	//this is the open file func, user calls open() and it returns the direction to that file. (file descriptor)
   char* path;
   int fd, omode;
   struct file* f;

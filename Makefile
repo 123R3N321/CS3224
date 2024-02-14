@@ -124,6 +124,7 @@ mkfs/mkfs: mkfs/mkfs.c $K/fs.h
 # http://www.gnu.org/software/make/manual/html_node/Chained-Rules.html
 .PRECIOUS: %.o
 
+# Comment from Ren: I added _hello and _sort, the bottom two lines in UPROGS, here.
 UPROGS=\
 	$U/_cat\
 	$U/_echo\
@@ -140,6 +141,8 @@ UPROGS=\
 	$U/_usertests\
 	$U/_wc\
 	$U/_zombie\
+	$U/_hello\
+	$U/_sort\
 
 fs.img: mkfs/mkfs README.md extreme.txt long.txt simple.txt $(UPROGS)
 	./mkfs/mkfs fs.img README.md extreme.txt long.txt simple.txt $(UPROGS)

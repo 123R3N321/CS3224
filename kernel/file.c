@@ -82,7 +82,7 @@ int filestat(struct file* f, struct stat* st) {
 }
 
 // Read from file f.
-int fileread(struct file* f, char* addr, int n) {
+int fileread(struct file* f, char* addr, int n) {	//this is called when user tries to read(fd, whereinto, howmuch)
   int r;
 
   if(f->readable == 0)

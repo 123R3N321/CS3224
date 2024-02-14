@@ -1,0 +1,23 @@
+I might not even be allowed to put words here, But I need some notes taken:
+
+to run a program I wirte in user/ directory, step out of that directory, and sudo make qemu, and inside the new terminal just type the name of the file without file extension, such as hello. When I want to quit, press ctrl+a , then just press x
+
+for the first homework whereby I essentially need a dynamic buffer, need to implement it the way like a python list (doubling of size), also when read in arguments, read one by one instead of doing all of them at once.
+
+
+
+More notes after mon office hour:
+
+user functions such as read() are stored in sysfile.c inside kernel. They all have names like sys_foo(), but to call them you just call foo().
+
+cat() is a great example of both reading in file and stdinput, also I misinterpreted std input!
+
+need to use printf to print out sorted number!
+
+the starter code is good place holder!
+
+try the implementation with a fake shadow program in myabe python, which i think will help greatly.
+
+Still need to think about what happens when trying to read from file, because data comes in as bytes of chars
+
+read very carefully the behaviour of read. read has changing values apparently, as it returns the size of data you read in. 

@@ -61,7 +61,7 @@ int stat(char* n, struct stat* st) {
   return r;
 }
 
-int atoi(const char* s) {
+int atoi(const char* s) {	//simply convert digit of 0-9 from char to int type
   int n;
 
   n = 0;

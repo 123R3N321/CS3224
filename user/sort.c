@@ -240,6 +240,7 @@ void cheat_sort(Buffer* buffer, int reversed){
 	for (int j = 0; j < count; j++) {
 		printf("%d ", arr[j]);	//this is the laziest solution without styling need.
 	}
+	free(arr);
 	
 }
 
